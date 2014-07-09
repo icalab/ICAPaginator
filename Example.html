@@ -1,0 +1,234 @@
+<html>
+  <head>
+    <title>ICA Paginator example.</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+      .page {
+        display: block;
+        float: none;
+        padding: 5px;
+        border: 1px solid #999;
+        margin: 5px;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script type="text/javascript" src="ICAPaginator.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var sourceText = $('#sourcetext').html();
+        $('#sourcetext').hide();
+        ICAPaginator.maxPageLength = 500;
+        var pages = ICAPaginator.paginate(sourceText);
+        for(var i = 0; i < pages.length; i++) {
+          page = pages[i].replace(/\s*[\r\n]{2,}\s*/g, '<br /><br />');
+          page = page.replace(/\s*[\r\n]\s*/g, '<br />');
+          $('#pages').append('<div class="page">' + page + '</div>');
+        }
+
+      });
+    </script>
+  </head>
+  <body>
+    <!-- The text is the first chapter of http://www.gutenberg.org/ebooks/11024 -->
+    <div id="sourcetext">
+Ik ben makelaar in koffi, en woon op de Lauriergracht, N° 37. Het is myn
+gewoonte niet, romans te schryven, of zulke dingen, en het heeft dan ook
+lang geduurd, voor ik er toe overging een paar riem papier extra te
+bestellen, en het werk aantevangen, dat gy, lieve lezer, zoo-even in de
+hand hebt genomen, en dat ge lezen moet als ge makelaar in koffi zyt, of
+als ge wat anders zyt. Niet alleen dat ik nooit iets schreef wat naar
+een roman geleek, maar ik houd er zelfs niet van, iets dergelyks te lezen,
+omdat ik een man van zaken ben. Sedert jaren vraag ik my af, waartoe zulke
+dingen dienen, en ik sta verbaasd over de onbeschaamdheid, waarmede een
+dichter of romanverteller u iets op de mouw durft spelden, dat nooit
+gebeurd is, en meestal niet gebeuren kan. Als ik in _myn_ vak--ik ben
+makelaar in koffi, en woon op de Lauriergracht N° 37--aan een principaal
+--een principaal is iemand die koffi verkoopt--een opgave deed, waarin
+maar een klein gedeelte der onwaarheden voorkwam, die in gedichten en
+romans de hoofdzaak uitmaken, zou hy terstond Busselinck & Waterman nemen.
+Dat zyn ook makelaars in koffi, doch hun adres behoeft ge niet te weten.
+Ik pas er dus wel op, dat ik geen romans schryf, of andere valsche opgaven
+doe. Ik heb dan ook altyd opgemerkt dat menschen die zich met zoo-iets
+inlaten, gewoonlyk slecht wegkomen. Ik ben drie en veertig jaren oud,
+bezoek sedert twintig jaren de beurs, en kan dus voor den dag treden, als
+men iemand roept die ondervinding heeft. Ik heb al wat huizen zien vallen!
+En gewoonlyk, wanneer ik de oorzaken naging, kwam het me voor, dat die
+moesten gezocht worden in de verkeerde richting die aan de meesten gegeven
+was in hun jeugd.
+
+Ik zeg: _waarheid en gezond verstand_, en hier blyf ik by. Voor de
+_Schrift_ maak ik natuurlyk een uitzondering. De fout begint al van
+Van Alphen af, en wel terstond by den eersten regel over die "_lieve
+wichtjes_." Wat drommel kon dien ouden heer bewegen, zich uittegeven
+voor een aanbidder van myn zusje Truitje die zeere oogen had, of van myn
+broêr Gerrit die altyd met zyn neus speelde? En toch, hy zegt: "dat hy
+die versjes zong, door _liefde_ gedrongen." Ik dacht dikwyls als kind:
+"man, ik wilde u graag eens ontmoeten, en als ge my de marmerknikkers
+weigerde, die ik u vragen zou, of myn naam voluit in banket--ik heet
+_Batavus_--dan houd ik u voor een leugenaar. Maar ik heb Van Alphen
+nooit gezien. Hy was al dood, geloof ik, toen hy ons vertelde dat myn
+vader myn beste vrind was--ik hield meer van Pauweltje Winser, die
+naast ons woonde in de Batavierstraat--en dat myn kleine hond zoo
+dankbaar was. We hielden geen honden, omdat ze zoo onzindelyk zyn.
+
+Alles leugens! Zoo gaat dan de opvoeding voort. Het nieuwe zusjen is van
+de groenvrouw gekomen in een groote kool. Alle Hollanders zyn dapper en
+edelmoedig. De Romeinen waren bly dat de Batavieren hen lieten leven.
+De Bey van Tunis kreeg een kolyk als hy het wapperen hoorde van de
+nederlandsche vlag. De hertog van Alva was een ondier. De eb, in 1672
+geloof ik, duurde wat langer dan gewoonlyk, expres om Nederland te
+beschermen. Leugens! Nederland is _Nederland_ gebleven, omdat onze oude
+luî goed op hun zaken pasten, en omdat ze het ware geloof hadden. Dàt
+is de zaak!
+
+En dan komen later weer andere leugens. Een meisjen is een engel. Wie
+dit het eerst ontdekte, heeft nooit zusters gehad. Liefde is een
+zaligheid. Men vlucht met het een of ander voorwerp naar het einde der
+aarde. De aarde heeft geen einden, en die liefde is ook gekheid. Niemand
+kan zeggen dat ik niet goed leef met myn vrouw--zy is een dochter van
+Last & Co, makelaars in koffi--niemand kan iets op ons huwelyk aanmerken.
+Ik ben lid van _Artis_, zy heeft een sjaallong van twee-en-negentig
+gulden, en van zulk een malle liefde die volstrekt aan het einde der
+aarde wil wonen, is toch tusschen ons nooit spraak geweest. Toen we
+getrouwd zyn, hebben wy een toertje naar den Haag gemaakt--ze heeft daar
+flanel gekocht, waarvan ik nog borstrokken draag--en verder heeft ons de
+liefde nooit de wereld ingejaagd. Dus: alles gekheid en leugens!
+
+En zou _myn_ huwelyk nu minder gelukkig wezen, dan van de menschen die
+zich uit liefde de tering op den hals haalden, of de haren uit het
+hoofd? Of denkt ge dat myn huishouden iets minder wel geregeld is, dan
+het wezen zou als ik voor zeventien jaar myn meisjen in _verzen_ gezegd
+had dat ik haar trouwen wilde? Gekheid! Ik had dit toch even goed kunnen
+doen als ieder ander, want verzenmaken is een ambacht, zeker minder
+moeielyk dan ivoordraaien. Hoe zouden anders de ulevellen met deviezen
+zoo goedkoop wezen?--Frits zegt: "_Uhlefeldjes_" ik weet niet, waarom?
+--En vraag eens naar den prys van een stel billardballen!
+
+Ik heb niets tegen verzen op-zichzelf. Wil men de woorden in gelid
+'t zetten, goed! Maar zeg niets wat niet waar is. "_De lucht is guur,
+en 't is vier uur_." Dit laat ik gelden, als het werkelijk _guur_ en
+_vier uur_ is. Maar als 't kwartier voor drieën is, kan ik, die myn
+woorden niet in 't gelid zet, zeggen: "_de lucht is guur, en 't is
+kwartier voor drieën_." De verzenmaker is door de _guurheid_ van den
+eersten regel aan een vol uur gebonden. Het moet voor hem juist _een,
+twee_ uur, enz. wezen, of de lucht mag niet guur zyn. _Zeven_ en _negen_
+is verboden door de maat. Daar gaat hy dan aan 't knoeien! Of het weêr
+moet veranderd, òf de tyd. Eén van beiden is dan gelogen.
+
+En niet alleen die verzen lokken de jeugd tot onwaarheid. Ga eens in den
+schouwburg, en luister dáár wat er voor leugens aan den man worden
+gebracht. De held van 't stuk wordt uit het water gehaald door iemand
+die op 't punt staat bankroet te maken. Dan geeft hy hem zyn halve
+vermogen. Dat kan niet waar zyn. Toen onlangs op de Prinsengracht myn
+hoed te-water woei--Frits zegt: _waaide_--heb ik den man die hem my
+terugbracht, een dubbeltje gegeven; en hy was tevreden. Ik weet wel dat
+ik iets meer had moeten geven als hy myzelf er uit gehaald had, maar
+zeker myn halve vermogen niet. 't Is immers duidelyk dat men op die wys
+maar tweemaal in 't water hoeft te vallen om doodarm te wezen. Wat het
+ergste is by zulke vertooningen op het tooneel, het publiek gewent zich
+zóó aan al die onwaarheden, dat het ze mooi vindt en toejuicht. Ik had
+weleens lust zoo'n heel parterre in 't water te gooien, om te zien wie
+dat toe juichen gemeend had. Ik, die van waarheid houd, waarschuw ieder
+dat ik voor 't opvisschen van myn persoon geen zoo hoog bergloon betalen
+wil. Wie met minder niet tevreden is, mag me laten liggen. Alleen Zondags
+zou ik iets meer geven, omdat ik dan myn kantilje ketting draag, en een
+anderen rok.
+
+Ja, dat tooneel bederft velen, meer nog dan de romans. Het is zoo
+aanschouwelyk! Met wat klatergoud en wat kant van uitgeslagen papier,
+ziet er dat alles zoo aanlokkelyk uit. Voor kinderen, meen ik, en voor
+menschen die niet in zaken zyn. Zelfs als die tooneelmenschen armoede
+willen voorstellen, is hun voorstelling altyd leugenachtig. Een meisje
+wier vader bankroet maakte, werkt om de familie te onderhouden. Heel
+goed. Daar zit ze dan te naaien, te breien of te borduren. Maar tel nu
+eens de steken die ze doet gedurende het heele bedryf. Ze praat, ze
+zucht, ze loopt naar 't venster, maar werken doet ze niet. De familie
+die van dezen arbeid leven kan, heeft weinig noodig. Zoo'n meisjen is
+natuurlyk de heldin. Ze heeft eenige verleiders de trappen afgeworpen,
+ze roept gedurig: "o myne moeder, o, myne moeder!" en stelt dus de deugd
+voor. Wat is dat voor een deugd, die een vol jaar noodig heeft voor een
+paar wollen kousen? Geeft dit alles niet valsche denkbeelden van deugd,
+en "_werken voor den kost?_" Alles gekheid en leugens!
+
+Dan komt haar eerste minnaar--die vroeger klerk was aan 't kopieboek,
+maar nu schatryk--op-eens terug, en trouwt haar. Ook weer leugens. Wie
+geld heeft, trouwt geen meisjen uit een gefailleerd huis. En als ge
+meent, dat dit op het tooneel er dóór kan als uitzondering, blyft toch
+myn aanmerking bestaan, dat men den zin voor waarheid bederft by het
+volk, dat de uitzondering als regel aanneemt, en dat men de publieke
+zedelykheid ondermynt, door het te gewennen iets toetejuichen op het
+_tooneel_, wat door elk fatsoenlyk makelaar of koopman voor een
+bespottelyke krankzinnigheid wordt gehouden in de _wereld_. Toen _ik_
+trouwde, waren wy op 't kantoor van myn schoonvader--Last & Co--met ons
+dertienen, en er ging wat om!
+
+En nog meer leugens op het tooneel. Als de held met zyn styven komediestap
+weggaat om 't verdrukte vaderland te redden, waarom gaat dan de dubbele
+achterdeur altyd vanzelf open? En verder, hoe kan de persoon die in verzen
+spreekt, voorzien wat de ander te antwoorden heeft, om hem 't rym gemakkelyk
+te maken? Als de veldheer tot de prinses Zegt: "_mevrouw, het is te laat,
+de poorten zyn gesloten_" hoe kan hy dan vooruit weten, dat zy zeggen wil:
+"_welaan dan, onversaagd, men doe het zwaard ontblooten?_" Want als zy nu
+eens, hoorende dat de poort toe was, antwoordde dat ze dan wat wachten zou
+tot er geopend werd, of dat zy een andermaal eens terug zou komen, waar
+bleef dan maat en rym? Is het dus niet een pure leugen, als de veldheer de
+prinses vragend aanziet, om te weten wat ze doen wil na 't poortsluiten?
+Nog-eens: als 't mensch nu eens lust had gehad te gaan slapen, in plaats
+van iets te ontblooten? Alles leugens!
+
+En dan die beloonde deugd! O, o, o! Ik ben sedert zeventien jaren
+makelaar in koffi--Lauriergracht, N° 37--en heb dus al zoo-iets
+bygewoond, maar het stuit my altyd vreeselyk, als ik de goede lieve
+waarheid zóó zie verdraaien. Beloonde deugd? Is 't niet om van de deugd
+een handelsartikel te maken? Het _is_ zoo niet in de wereld, en 't is
+_goed_ dat het niet zoo is. Want waar bleef de verdienste, als de deugd
+beloond werd? Waartoe dus die infame leugens altyd voorgewend?
+
+Daar is by-voorbeeld Lukas, onze pakhuisknecht, die reeds by den vader
+van Last & Co heeft gewerkt--de firma was toen Last & Meyer, maar de
+Meyers zyn er lang uit--dàt was dan toch wel een deugdzaam man. Geen
+boon kwam er ooit te-kort, hy ging stipt naar de kerk, en drinken deed
+hy niet. Als myn schoonvader te Driebergen was, bewaarde hy het huis, en
+de kas, en alles. Eens heeft hy aan de Bank zeventien gulden te veel
+ontvangen, en, hy bracht ze terug. Hy is nu oud en jichtig, en kan niet
+meer dienen. Nu heeft hy niets, want er gaat veel by ons om, en we
+hebben jong volk noodig. Welnu, ik houd dien Lukas voor zeer deugdzaam,
+maar wordt hy nu beloond? Komt er een prins die hem diamanten geeft, of
+een fee die hem boterhammen smeert? Waarachtig niet! Hy is arm, en blyft
+arm, en dit moet ook zoo wezen. _Ik_ kan hem niet helpen--want we hebben
+jong volk noodig, omdat er zooveel by ons omgaat--maar al _kon_ ik, waar
+bleef zyn verdienste, als hy nu op zyn ouden dag een gemakkelyk leven
+leiden kon? Dan zouden alle pakhuisknechts wel deugdzaam worden, en
+iedereen, hetgeen Gods bedoeling niet wezen kan, omdat er dan geen
+byzondere belooning voor de braven overbleef hier-namaals. Maar op een
+tooneel verdraaien ze dat ... alles leugens!
+
+_Ik_ ben ook deugdzaam, maar vraag ik hiervoor belooning? Als myn zaken
+goed gaan--en dit doen ze--als myn vrouw en kinderen gezond zyn, zoodat
+ik geen gemaal heb met dokter en apteker ... als ik jaar-in jaar-uit een
+sommetje kan ter-zy leggen voor den ouden dag ... als Frits knap opgroeit,
+om later in myn plaats te komen als ik naar Driebergen ga ... zie, dan
+ben ik heel tevreden. Maar dit alles is een natuurlyk gevolg van de
+omstandigheden, en omdat ik op de zaken pas. Voor myn deugd eisch ik niets.
+
+En dat ik toch deugdzaam bèn, blykt uit myn liefde voor de waarheid.
+Deze is, na myn gehechtheid aan het geloof, myn hoofdneiging. En ik
+wenschte dat ge hiervan overtuigd waart, lezer, omdat het de
+verontschuldiging is voor 't schryven van dit boek.
+
+Een tweede neiging, die my even sterk als waarheidsliefde beheerscht, is
+de hartstocht voor myn vak. Ik ben namelyk makelaar in koffi, Lauriergracht
+N° 37. Welnu, lezer, aan myn onkreukbare liefde voor de waarheid, en aan
+myn yver voor de zaken, hebt gy te danken dat deze bladen geschreven zyn.
+Ik zal u vertellen hoe dit is toegegaan. Daar ik nu voor 't oogenblik
+afscheid van u neem--ik moet naar de beurs--noodig ik u straks op een
+tweede hoofdstuk. Tot weerziens dus!
+
+Eilieve, steek het by u ...'t is een kleine moeite ... het kan te-pas
+komen ... ei zie, daar is het: een adreskaartje! Die Co ben ik, sedert
+de _Meyers_ er uit zyn ... de oude Last is myn schoonvader.
+     </div>
+    <div id="pages">
+    </div>
+  </body>
+</html>
